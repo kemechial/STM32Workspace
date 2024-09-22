@@ -1,0 +1,16 @@
+07:39:52 **** Build of configuration Debug for project STM32F407 ****
+make -j8 all 
+arm-none-eabi-gcc -o "STM32F407.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32Workspace\STM32F407\STM32F407IEHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F407.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32F407.elf
+ 
+arm-none-eabi-size   STM32F407.elf 
+arm-none-eabi-objdump -h -S  STM32F407.elf  > "STM32F407.list"
+   text	   data	    bss	    dec	    hex	filename
+   8452	     20	   1644	  10116	   2784	STM32F407.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32F407.list
+ 
+
+07:39:53 Build Finished. 0 errors, 0 warnings. (took 698ms)
+

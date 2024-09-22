@@ -1,0 +1,10 @@
+15:30:22 **** Incremental Build of configuration Debug for project STM32_F103_USART_IT ****
+make -j8 all 
+arm-none-eabi-size   STM32_F103_USART_IT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8240	     20	   1652	   9912	   26b8	STM32_F103_USART_IT.elf
+Finished building: default.size.stdout
+ 
+
+15:30:22 Build Finished. 0 errors, 0 warnings. (took 199ms)
+

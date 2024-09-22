@@ -1,0 +1,48 @@
+14:27:46 **** Incremental Build of configuration Debug for project STM32F401_RTC ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:141:40: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  141 |             HAL_UART_Transmit(&huart2, time, sizeof(time),500);
+      |                                        ^~~~
+      |                                        |
+      |                                        char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:143:40: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  143 |             HAL_UART_Transmit(&huart2, date, sizeof(date),500);
+      |                                        ^~~~
+      |                                        |
+      |                                        char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:139:50: warning: 'sprintf' writing a terminating nul past the end of the destination [-Wformat-overflow=]
+  139 |             sprintf((char*)time,"%02d:%02d:%02d\n", getTime.Hours, getTime.Minutes, getTime.Seconds);
+      |                                                  ^
+../Core/Src/main.c:139:13: note: 'sprintf' output between 10 and 13 bytes into a destination of size 9
+  139 |             sprintf((char*)time,"%02d:%02d:%02d\n", getTime.Hours, getTime.Minutes, getTime.Seconds);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32F401_RTC.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32Workspace\STM32F401_RTC\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F401_RTC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32F401_RTC.elf
+ 
+arm-none-eabi-size  STM32F401_RTC.elf 
+arm-none-eabi-objdump -h -S STM32F401_RTC.elf  > "STM32F401_RTC.list"
+   text	   data	    bss	    dec	    hex	filename
+  14900	    100	   2028	  17028	   4284	STM32F401_RTC.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32F401_RTC.list
+ 
+
+14:27:47 Build Finished. 0 errors, 3 warnings. (took 766ms)
+

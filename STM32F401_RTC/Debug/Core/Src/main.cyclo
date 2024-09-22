@@ -1,0 +1,7 @@
+../Core/Src/main.c:72:5:main	5
+../Core/Src/main.c:153:6:SystemClock_Config	3
+../Core/Src/main.c:201:13:MX_RTC_Init	5
+../Core/Src/main.c:284:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:317:13:MX_GPIO_Init	1
+../Core/Src/main.c:345:6:HAL_RTC_AlarmAEventCallback	3
+../Core/Src/main.c:363:6:Error_Handler	1

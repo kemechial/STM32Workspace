@@ -1,0 +1,153 @@
+23:06:00 **** Incremental Build of configuration Debug for project STM32_LCD_Library ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/lcd_i2cModule.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/lcd_i2cModule.d" -MT"Core/Src/lcd_i2cModule.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/lcd_i2cModule.o"
+../Core/Src/lcd_i2cModule.c:21:22: error: variably modified 'Cursor_Data' at file scope
+   21 | static const uint8_t Cursor_Data[line_MAX][chr_MAX] = {
+      |                      ^~~~~~~~~~~
+../Core/Src/lcd_i2cModule.c:21:22: error: variably modified 'Cursor_Data' at file scope
+../Core/Src/lcd_i2cModule.c:22:9: warning: excess elements in array initializer
+   22 |   {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F}, //1. line DDRAM address
+      |         ^~~~
+../Core/Src/lcd_i2cModule.c:22:9: note: (near initialization for 'Cursor_Data[0]')
+../Core/Src/lcd_i2cModule.c:22:14: warning: excess elements in array initializer
+   22 |   {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F}, //1. line DDRAM address
+      |              ^~~~
+../Core/Src/lcd_i2cModule.c:22:14: note: (near initialization for 'Cursor_Data[0]')
+../Core/Src/lcd_i2cModule.c:22:19: warning: excess elements in array initializer
+   22 |   {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F}, //1. line DDRAM address
+      |                   ^~~~
+../Core/Src/lcd_i2cModule.c:22:19: note: (near initialization for 'Cursor_Data[0]')
+../Core/Src/lcd_i2cModule.c:22:24: warning: excess elements in array initializer
+   22 |   {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F}, //1. line DDRAM address
+      |                        ^~~~
+../Core/Src/lcd_i2cModule.c:22:24: note: (near initialization for 'Cursor_Data[0]')
+../Core/Src/lcd_i2cModule.c:22:29: warning: excess elements in array initializer
+   22 |   {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F}, //1. line DDRAM address
+      |                             ^~~~
+../Core/Src/lcd_i2cModule.c:22:29: note: (near initialization for 'Cursor_Data[0]')
+../Core/Src/lcd_i2cModule.c:22:34: warning: excess elements in array initializer
+   22 |   {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F}, //1. line DDRAM address
+      |                                  ^~~~
+../Core/Src/lcd_i2cModule.c:22:34: note: (near initialization for 'Cursor_Data[0]')
+../Core/Src/lcd_i2cModule.c:22:39: warning: excess elements in array initializer
+   22 |   {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F}, //1. line DDRAM address
+      |                                       ^~~~
+../Core/Src/lcd_i2cModule.c:22:39: note: (near initialization for 'Cursor_Data[0]')
+../Core/Src/lcd_i2cModule.c:22:44: warning: excess elements in array initializer
+   22 |   {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F}, //1. line DDRAM address
+      |                                            ^~~~
+../Core/Src/lcd_i2cModule.c:22:44: note: (near initialization for 'Cursor_Data[0]')
+../Core/Src/lcd_i2cModule.c:22:49: warning: excess elements in array initializer
+   22 |   {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F}, //1. line DDRAM address
+      |                                                 ^~~~
+../Core/Src/lcd_i2cModule.c:22:49: note: (near initialization for 'Cursor_Data[0]')
+../Core/Src/lcd_i2cModule.c:22:54: warning: excess elements in array initializer
+   22 |   {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F}, //1. line DDRAM address
+      |                                                      ^~~~
+../Core/Src/lcd_i2cModule.c:22:54: note: (near initialization for 'Cursor_Data[0]')
+../Core/Src/lcd_i2cModule.c:22:59: warning: excess elements in array initializer
+   22 |   {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F}, //1. line DDRAM address
+      |                                                           ^~~~
+../Core/Src/lcd_i2cModule.c:22:59: note: (near initialization for 'Cursor_Data[0]')
+../Core/Src/lcd_i2cModule.c:22:64: warning: excess elements in array initializer
+   22 |   {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F}, //1. line DDRAM address
+      |                                                                ^~~~
+../Core/Src/lcd_i2cModule.c:22:64: note: (near initialization for 'Cursor_Data[0]')
+../Core/Src/lcd_i2cModule.c:22:69: warning: excess elements in array initializer
+   22 |   {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F}, //1. line DDRAM address
+      |                                                                     ^~~~
+../Core/Src/lcd_i2cModule.c:22:69: note: (near initialization for 'Cursor_Data[0]')
+../Core/Src/lcd_i2cModule.c:22:74: warning: excess elements in array initializer
+   22 |   {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F}, //1. line DDRAM address
+      |                                                                          ^~~~
+../Core/Src/lcd_i2cModule.c:22:74: note: (near initialization for 'Cursor_Data[0]')
+../Core/Src/lcd_i2cModule.c:22:79: warning: excess elements in array initializer
+   22 |   {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F}, //1. line DDRAM address
+      |                                                                               ^~~~
+../Core/Src/lcd_i2cModule.c:22:79: note: (near initialization for 'Cursor_Data[0]')
+../Core/Src/lcd_i2cModule.c:23:9: warning: excess elements in array initializer
+   23 |   {0x40,0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48,0x49,0x4A,0x4B,0x4C,0x4D,0x4E,0x4F}, //2. line DDRAM address
+      |         ^~~~
+../Core/Src/lcd_i2cModule.c:23:9: note: (near initialization for 'Cursor_Data[1]')
+../Core/Src/lcd_i2cModule.c:23:14: warning: excess elements in array initializer
+   23 |   {0x40,0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48,0x49,0x4A,0x4B,0x4C,0x4D,0x4E,0x4F}, //2. line DDRAM address
+      |              ^~~~
+../Core/Src/lcd_i2cModule.c:23:14: note: (near initialization for 'Cursor_Data[1]')
+../Core/Src/lcd_i2cModule.c:23:19: warning: excess elements in array initializer
+   23 |   {0x40,0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48,0x49,0x4A,0x4B,0x4C,0x4D,0x4E,0x4F}, //2. line DDRAM address
+      |                   ^~~~
+../Core/Src/lcd_i2cModule.c:23:19: note: (near initialization for 'Cursor_Data[1]')
+../Core/Src/lcd_i2cModule.c:23:24: warning: excess elements in array initializer
+   23 |   {0x40,0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48,0x49,0x4A,0x4B,0x4C,0x4D,0x4E,0x4F}, //2. line DDRAM address
+      |                        ^~~~
+../Core/Src/lcd_i2cModule.c:23:24: note: (near initialization for 'Cursor_Data[1]')
+../Core/Src/lcd_i2cModule.c:23:29: warning: excess elements in array initializer
+   23 |   {0x40,0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48,0x49,0x4A,0x4B,0x4C,0x4D,0x4E,0x4F}, //2. line DDRAM address
+      |                             ^~~~
+../Core/Src/lcd_i2cModule.c:23:29: note: (near initialization for 'Cursor_Data[1]')
+../Core/Src/lcd_i2cModule.c:23:34: warning: excess elements in array initializer
+   23 |   {0x40,0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48,0x49,0x4A,0x4B,0x4C,0x4D,0x4E,0x4F}, //2. line DDRAM address
+      |                                  ^~~~
+../Core/Src/lcd_i2cModule.c:23:34: note: (near initialization for 'Cursor_Data[1]')
+../Core/Src/lcd_i2cModule.c:23:39: warning: excess elements in array initializer
+   23 |   {0x40,0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48,0x49,0x4A,0x4B,0x4C,0x4D,0x4E,0x4F}, //2. line DDRAM address
+      |                                       ^~~~
+../Core/Src/lcd_i2cModule.c:23:39: note: (near initialization for 'Cursor_Data[1]')
+../Core/Src/lcd_i2cModule.c:23:44: warning: excess elements in array initializer
+   23 |   {0x40,0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48,0x49,0x4A,0x4B,0x4C,0x4D,0x4E,0x4F}, //2. line DDRAM address
+      |                                            ^~~~
+../Core/Src/lcd_i2cModule.c:23:44: note: (near initialization for 'Cursor_Data[1]')
+../Core/Src/lcd_i2cModule.c:23:49: warning: excess elements in array initializer
+   23 |   {0x40,0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48,0x49,0x4A,0x4B,0x4C,0x4D,0x4E,0x4F}, //2. line DDRAM address
+      |                                                 ^~~~
+../Core/Src/lcd_i2cModule.c:23:49: note: (near initialization for 'Cursor_Data[1]')
+../Core/Src/lcd_i2cModule.c:23:54: warning: excess elements in array initializer
+   23 |   {0x40,0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48,0x49,0x4A,0x4B,0x4C,0x4D,0x4E,0x4F}, //2. line DDRAM address
+      |                                                      ^~~~
+../Core/Src/lcd_i2cModule.c:23:54: note: (near initialization for 'Cursor_Data[1]')
+../Core/Src/lcd_i2cModule.c:23:59: warning: excess elements in array initializer
+   23 |   {0x40,0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48,0x49,0x4A,0x4B,0x4C,0x4D,0x4E,0x4F}, //2. line DDRAM address
+      |                                                           ^~~~
+../Core/Src/lcd_i2cModule.c:23:59: note: (near initialization for 'Cursor_Data[1]')
+../Core/Src/lcd_i2cModule.c:23:64: warning: excess elements in array initializer
+   23 |   {0x40,0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48,0x49,0x4A,0x4B,0x4C,0x4D,0x4E,0x4F}, //2. line DDRAM address
+      |                                                                ^~~~
+../Core/Src/lcd_i2cModule.c:23:64: note: (near initialization for 'Cursor_Data[1]')
+../Core/Src/lcd_i2cModule.c:23:69: warning: excess elements in array initializer
+   23 |   {0x40,0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48,0x49,0x4A,0x4B,0x4C,0x4D,0x4E,0x4F}, //2. line DDRAM address
+      |                                                                     ^~~~
+../Core/Src/lcd_i2cModule.c:23:69: note: (near initialization for 'Cursor_Data[1]')
+../Core/Src/lcd_i2cModule.c:23:74: warning: excess elements in array initializer
+   23 |   {0x40,0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48,0x49,0x4A,0x4B,0x4C,0x4D,0x4E,0x4F}, //2. line DDRAM address
+      |                                                                          ^~~~
+../Core/Src/lcd_i2cModule.c:23:74: note: (near initialization for 'Cursor_Data[1]')
+../Core/Src/lcd_i2cModule.c:23:79: warning: excess elements in array initializer
+   23 |   {0x40,0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48,0x49,0x4A,0x4B,0x4C,0x4D,0x4E,0x4F}, //2. line DDRAM address
+      |                                                                               ^~~~
+../Core/Src/lcd_i2cModule.c:23:79: note: (near initialization for 'Cursor_Data[1]')
+../Core/Src/lcd_i2cModule.c:23:3: warning: excess elements in array initializer
+   23 |   {0x40,0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48,0x49,0x4A,0x4B,0x4C,0x4D,0x4E,0x4F}, //2. line DDRAM address
+      |   ^
+../Core/Src/lcd_i2cModule.c:23:3: note: (near initialization for 'Cursor_Data')
+../Core/Src/lcd_i2cModule.c: In function 'LCD_Send_String':
+../Core/Src/lcd_i2cModule.c:163:22: error: storage size of 'buffer' isn't constant
+  163 |         static char *buffer[BFR_MAX];
+      |                      ^~~~~~
+../Core/Src/lcd_i2cModule.c:163:22: warning: unused variable 'buffer' [-Wunused-variable]
+../Core/Src/lcd_i2cModule.c: In function 'LCD_Print':
+../Core/Src/lcd_i2cModule.c:226:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  226 |         sprintf(data_ch, ch, value);
+      |         ^~~~~~~
+../Core/Src/lcd_i2cModule.c:13:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   12 | #include <string.h>
+  +++ |+#include <stdio.h>
+   13 | 
+../Core/Src/lcd_i2cModule.c:226:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  226 |         sprintf(data_ch, ch, value);
+      |         ^~~~~~~
+../Core/Src/lcd_i2cModule.c:226:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+make: *** [Core/Src/subdir.mk:37: Core/Src/lcd_i2cModule.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+23:06:00 Build Failed. 4 errors, 34 warnings. (took 309ms)
+

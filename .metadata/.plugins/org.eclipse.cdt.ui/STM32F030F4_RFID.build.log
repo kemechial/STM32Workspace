@@ -1,0 +1,10 @@
+16:48:22 **** Incremental Build of configuration Debug for project STM32F030F4_RFID ****
+make -j8 all 
+arm-none-eabi-size  STM32F030F4_RFID.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11252	    112	   2144	  13508	   34c4	STM32F030F4_RFID.elf
+Finished building: default.size.stdout
+ 
+
+16:48:22 Build Finished. 0 errors, 0 warnings. (took 203ms)
+

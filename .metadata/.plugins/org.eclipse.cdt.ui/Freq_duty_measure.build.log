@@ -1,0 +1,10 @@
+16:26:56 **** Incremental Build of configuration Debug for project Freq_duty_measure ****
+make -j8 all 
+arm-none-eabi-size  Freq_duty_measure.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14676	     28	   1740	  16444	   403c	Freq_duty_measure.elf
+Finished building: default.size.stdout
+ 
+
+16:26:56 Build Finished. 0 errors, 0 warnings. (took 277ms)
+
